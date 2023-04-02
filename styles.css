@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(229, 57%, 11%);
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(243, 100%, 93%);
+}
+
+.bg-img {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 50vh;
+}
+
+.bg-mobile-img {
+    opacity: 0;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container {
+    width: 450px;
+    height: 250px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 15px 140px 15px 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+
+}
+
+.right-container {
+    width: 650px;
+    height: 180px;
+    margin-left: 30px;
+    margin-top: 70px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+
+.logo {
+    width: 70%;
+}
+
+.icons {
+    padding-top: 30px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: hsl(229, 57%, 11%);
+    box-sizing: border-box;
+    padding: 15px;
+    margin-right: 15px;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+
+
+.bar {
+    height: 18px;
+    border-radius: 14px;
+    border: solid 3px hsla(229, 57%, 11%, 0.2);
+    margin-top: 18px;
+    background-color: hsla(229, 57%, 11%, 0.5);
+}
+
+.bar-bar {
+    width: 81.5%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 2px;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: hsl(243, 100%, 93%);
+}
+
+.gb {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gb-text {
+    font-weight:700;
+}
+
+.bubble-container {
+    position: absolute;
+    margin-left: 830px;
+    margin-top: -120px;
+}
+
+.speech-bubble {
+    width: 150px;
+    background: hsl(0, 0%, 100%);
+    padding: 15px 25px;
+    border-radius: 12px 12px 0 12px;
+    text-align: center;
+    font-weight: 700;
+    color: hsl(229, 57%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sb:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid hsl(0, 0%, 100%);
+    border-top: 20px solid hsl(0, 0%, 100%);
+    border-bottom: 20px solid transparent;
+    right: 0;
+    bottom: -20px;
+}
+
+.gb-number {
+    font-size: 2.5rem;
+    padding-right: 15px;
+}
+
+.gb-left {
+    color: hsl(229, 7%, 55%);
+    letter-spacing: 1px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 30px;
+}
+
+.attribution a { 
+    color: hsl(243, 100%, 93%); 
+}
+
+@media (max-width:900px) {
+    .bg-img {
+        opacity: 0;
+    }
+    
+    .bg-mobile-img {
+        opacity: 1;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .left-container {
+        width: 350px;
+        height: 200px;
+        border-radius: 12px 100px 12px 12px;
+    }
+
+    .right-container {
+        width: 350px;
+        margin-left: 0;
+        margin-top: 25px;
+        padding: 35px 40px 65px 40px;
+        border-radius: 12px;
+    }
+
+    .icons {
+        padding-top: 25px;
+    }
+
+
+    .icon {
+        width: 50px;
+        height: 50px;
+        padding: 12px;
+        margin-right: 12px;
+        border-radius: 12px;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .bubble-container {
+        margin-left: 0;
+        margin-top: 400px;
+    }
+
+    .speech-bubble {
+        border-radius: 10px;
+    }
+
+    .sb:after {
+        bottom: 20px;
+    }
+}
+
+@media (min-width:901px) and (max-width:1250px) {
+    .bg-img {
+        width: auto;
+    }
+}
