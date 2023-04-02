@@ -19,6 +19,7 @@ body {
 }
 
 .bg-mobile-img {
+    position: fixed;
     opacity: 0;
 }
 
